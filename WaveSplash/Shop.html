@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Shop</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="Shop.css">
+	<link rel="stylesheet" href="../NavBar/navbarandfooter.css">
+</head>
+
+<body>
+	<!-- NAVIGATION BAR -->
+	<header>
+		<!-- WEBSITE LOGO -->
+		<img id="logo" src="../images/icon.png" alt="Web Logo">
+		<nav id="navigation">
+			<ul>
+				<li><a href="../HomePage/HomePage.html">Home</a></li>
+				<li><a class="active" href="../StorePage/Shop.html">Store</a></li>
+				<li><a href="..\Quiz\Quiz1.html"> Quiz</a></li>
+				<li><a href="..\gallery\Gallery.html">Gallery</a></li>
+				<li><a href="..\Sitemap\Sitemap.html">Site Map</a></li>
+				<li><a href="..\FeedbackPage\feedbackForm.html">Feedback</a></li>
+				<li><a href="../StudentDetails/StudentDetails.html">About Us</a></li>
+			</ul>
+		</nav>
+	</header><br>
+
+	<div class="mainBody">
+
+	<h1 class="heading" id="heading">Products</h1>
+
+	<!-- Getting name n email as inputs -->
+	<div class="inputs">
+		<input class="input1" type="text" id="name" placeholder="Name"><br>
+		<input class="input1" type="text" id="email" placeholder="E-mail">
+	</div>
+
+	<!-- Creating Products -->
+	<div class="productRow">
+
+		<div class="products">
+			<img src="../images/mug.jpg" alt="mug" class="image">
+			<p class="productName">TOC Mug</p>
+			<p>$<span class="price">6.99</span></p>
+			<button class="buyButton">Buy</button>
+		</div>
+
+		<div class="products">
+			<img src="../images/tshirt.jpg" alt="t-shirt" class="image">
+			<p class="productName">TOC T-shirt</p>
+			<p>$<span class="price">12.99</span></p>
+			<button class="buyButton">Buy</button>
+		</div>
+
+		<div class="products">
+			<img src="../images/Cap.jpg" alt="cap" class="image">
+			<p class="productName">TOC Cap</p>
+			<p>$<span class="price">8.99</span></p>
+			<button class="buyButton">Buy</button>
+		</div>
+
+		<div class="products">
+			<img src="../images/bottle.jpg" alt="bottle" class="image">
+			<p class="productName">TOC Bottle</p>
+			<p>$<span class="price">10.99</span></p>
+			<button class="buyButton">Buy</button>
+		</div>
+
+	</div>
+
+	<!-- Creating cart -->
+	<div class="cartDiv">
+		<fieldset class="cartField">
+			<h1>Cart</h1>
+			<!-- Empty cart div -->
+			<div class="cartEmpty" id="emptyCartElements">
+				<p>Cart is empty.</p>
+				<a href="#" class="btn">Continue Shopping</a>
+			</div>
+			<div id="cartContent">
+
+
+			</div>
+
+			<!-- Displaying total -->
+			<div class="totalDiv" id="totalElements">
+				<div>
+					Total
+				</div>
+				<div>
+					$<span id="totalPrice">0.00</span>
+				</div>
+			</div>
+
+			<button id="checkoutButton">Checkout</button>
+
+
+		</fieldset>
+
+
+		<!-- Creating invoice template -->
+		<div id="invoiceDiv">
+
+			<!-- Empty div to add info -->
+			<div id="info">
+
+			</div>
+
+
+			<fieldset class="invoiceField">
+				<div id="invoiceItemsDiv">
+
+				</div>
+			</fieldset>
+
+			<button id="doneButton">Done!</button>
+
+
+		</div>
+
+
+	</div>
+</div>
+
+	<!-- FOOTER -->
+	<footer class="mainfooter">
+		<div id="leftside">
+			<h3>QUICK LINKS</h3>
+			<ul>
+				<li><a href="..\HomePage\HomePage.html"> Home</a></li>
+				<li><a href="..\StorePage\Shop.html"> Store</a></li>
+				<li><a href="..\Quiz\Quiz1.html"> Quiz</a></li>
+				<li><a href="..\gallery\Gallery.html">Gallery</a></li>
+				<li><a href="..\Sitemap\Sitemap.html">Site Map</a></li>
+				<li><a href="..\FeedbackPage\feedbackForm.html">Feedback</a></li>
+				<li><a href="../StudentDetails/StudentDetails.html">About Us</a></li>
+			</ul><br>
+		</div>
+
+<hr>
+
+		<div id="center">
+			<h3>SOCIALS</h3>
+			<ul class="social">
+				<li><a href="https://www.facebook.com/iitsl/">
+					<img src="../images/fb.webp" alt="facebook">
+				</a></li>
+
+				<li><a href="https://www.youtube.com/channel/UC02DMFclK9vaEdOIKSiaNkA">
+					<img src="../images/yout.webp" alt="youtube">
+				</a></li>
+				
+				<li><a href="https://twitter.com/iitsrilanka?lang=en">
+					<img src="../images/twitter.webp" alt="twitter">
+				</a></li>
+
+				<li><a href="https://twitter.com/iitsrilanka?lang=en">
+					<img src="../images/inster.webp" alt="instergram">
+				</a></li>
+			</ul>			
+		</div>
+		
+		<div id="rightside">
+			<h3>CONTACT US</h3>
+			<ul>
+				<li>Contact: 098-7654321</li>
+				<li>E-mail: <a href="mailto:thrillofceylon@gmail.com">thrillofceylon@gmail.com</a></li>
+				<li>Address: Galle Road, Colombo, Sri Lanka.</li>
+			</ul>
+		</div>
+
+		<!-- Page Editor link -->
+		<div class="pageeditor">	
+			<a href="../PageEditor-1/PageEditor-1.html"><b>View Page Editor</b></a>
+			<p>©Copyright THRILLOFCEYLON 2023 All Rights Reserved.</p>	
+		</div>
+		
+		<!-- Back to Top link -->
+		<div id="backtotop">
+			<a href="#"><b>Back to Top</b></a>
+		</div>
+	</footer>
+
+	<script src="Shop.js"></script>
+</body>
+
+</html>

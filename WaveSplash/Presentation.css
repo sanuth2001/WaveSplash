@@ -1,0 +1,27 @@
+body {
+  background-image: url(../images/background1.jpg);
+}
+
+/* Styling main div */
+.main {
+  background-color: rgba(255, 255, 255, 0.33);
+  text-align: left;
+  width: 50vw;
+  height: 54vh;
+  border-radius: 5vh;
+  margin-left: 10vh;
+  margin-top: 10vh;
+}
+
+.info {
+  padding-left: 3vw;
+  padding-top: 3vh;
+}
+
+.info h1 {
+  font-size: 8vh;
+}
+
+.info ul li {
+  font-size: 5vh;
+}

@@ -1,0 +1,121 @@
+body {
+  background-color: black;
+}
+
+.heading {
+  color: white;
+  text-align: center;
+  font-size: 8vh;
+  margin-bottom: 5vh;
+}
+
+.shooting {
+  background-image: url(../images/shooting.jpg);
+  width: 25vw;
+  height: 90vh;
+  background-position: center;
+  border-radius: 5vh;
+  transition: 1s;
+}
+
+.shooting:hover {
+  margin-top: 3vh;
+}
+
+.shooting h1 {
+  color: white;
+  padding: 7vh 5vw 2vh 5vw;
+
+}
+
+.shooting p{
+  color: white;
+  padding: 4vw;
+  font-size: 2.2vh;
+}
+
+.cargames {
+  background-image: url(../images/car.jpg);
+  width: 25vw;
+  height: 90vh;
+  background-position: center;
+  border-radius: 5vh;
+  margin-top: 6vh;
+  transition: 1s;
+
+}
+
+.cargames:hover {
+  margin-top: 3vh;
+}
+
+.cargames h1 {
+  color: white;
+  padding: 7vh 5vw 2vh 5vw;
+
+}
+
+.cargames p{
+  color: white;
+  padding: 4vw;
+  font-size: 2.2vh;
+}
+
+.sports {
+  background-image: url(../images/soccer.jpg);
+  width: 25vw;
+  height: 90vh;
+  background-position: center;  
+  border-radius: 5vh;
+  transition: 1s;
+
+}
+
+.sports:hover {
+  margin-top: 3vh;
+}
+
+.sports h1 {
+  color: white;
+  padding: 7vh 5vw 2vh 5vw;
+
+}
+
+.sports p{
+  color: white;
+  padding: 4vw;
+  font-size: 2.2vh;
+}
+
+.fighting {
+  background-image: url(../images/fighting.jpg);
+  width: 25vw;
+  height: 90vh;
+  background-position: center;
+  border-radius: 5vh;
+  margin-top: 6vh;
+  transition: 1s;
+
+}
+
+.fighting:hover {
+  margin-top: 3vh;
+}
+
+.fighting h1 {
+  color: white;
+  padding: 7vh 5vw 2vh 5vw;
+
+}
+
+.fighting p{
+  color: white;
+  padding: 4vw;
+  font-size: 2.2vh;
+}
+
+
+.container {
+  display: flex;
+  gap: 2vh;
+}

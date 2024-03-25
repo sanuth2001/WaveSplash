@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Feedback</title>
+	<link rel="stylesheet" href="feedbackCSS.css">
+	<script src="feedback.js"></script>
+</head>
+<body>
+	<!-- NAVIGATION BAR -->
+	<header>
+		<!-- WEBSITE LOGO -->
+		<img id="logo" src="..\images\icon.png" alt="Web Logo">
+		<nav id="navigation">
+			<ul>
+				<li><a href="..\HomePage\HomePage.html">Home</a></li>
+				<li><a href="..\StorePage\Shop.html">Store</a></li>
+				<li><a href="..\Quiz\Quiz1.html">Quiz</a></li>
+				<li><a href="../gallery/Gallery.html">Gallery</a></li>
+				<li><a href="../sitemap/Sitemap.html">Site Map</a></li>
+				<li><a class="active" href="..\FeedbackPage\feedbackForm.html">Feedback</a></li>
+				<li><a href="../StudentDetails/StudentDetails.html">About Us</a></li>
+			</ul>
+		</nav>
+	</header><br><br><br><br><br><br>
+
+	<fieldset>
+		<div id="feedback-form-section">	
+			<!-- FEEDBACK FORM -->
+			<div id="feedback1">
+				<h1 id="f1">FEEDBACK FORM</h1>
+			</div>
+					
+			<form name="myform" action="mailto:thrillofceylon@gmail.com" id="form" onsubmit="return validateForm()" method="post" enctype="text/plain">
+
+				<!-- FULL NAME -->
+				<div id="fullname" >
+					<label for="name"><strong>Full Name :</strong></label><br>
+					<input type="text" name="name" id="name" placeholder="Enter Full Name" style="width: 600px; height: 40px;" ><br><br>		
+				</div>
+	
+				<!-- EMAIL ADDRESS -->
+				<div id="emailaddress">
+					<label for="email"><strong>Email Address :</strong></label><br>
+					<input type="email" name="email" id="email" placeholder="Enter Email Address" style="width: 600px; height: 40px;" ><br><br>				
+				</div>
+		
+				<!-- FEEDBACK AREA -->
+				<div id="feedback2">	
+					<label for="feedback"><strong>Feedback : </strong></label><br>
+					<textarea id="feedback" name="feedback" rows="5" cols="80" placeholder="Enter your feedback here..." ></textarea><br><br>
+				</div>
+		
+				<!-- COUNTRY -->
+				<div id="country">
+					<label  ><strong>Country :</strong></label><br>
+					<select name="country" id="countries">
+						<option value="srilanka">Sri Lanka</option>
+						<option value="usa">USA</option>
+						<option value="canada">Canada</option>
+						<option value="australia">Australia</option>
+						<option value="india">India</option>
+						<option value="japan">Japan</option>
+					</select><br><br>
+				</div>
+		
+				<!--HOW DISCOVER OUR WEBSITE-->
+				<div id="discover">
+					<label ><strong>How Did You Discover Our Website? </strong></label><br><br>
+					<div>
+						<input type="radio" name="discover" id="0" value="0">
+						<label class="radio-label" >Social media</label><br>
+						<input type="radio" name="discover" id="1" value="1">
+						<label class="radio-label" >Advertiesment</label><br>
+						<input type="radio" name="discover" id="2" value="2">
+						<label class="radio-label" >Search Engine</label><br>
+						<input type="radio" name="discover" id="3" value="3">
+						<label class="radio-label">Event/Conference</label><br>
+						<input type="radio" name="discover" id="4" value="4">
+						<label class="radio-label" >Other</label>
+					</div><br><br>
+				</div>
+	
+				<!--RECOMMEND THE WEBSITE-->
+				<div id="recommend">
+					<label><strong>Would You Recommend Our Website to Others? </strong></label><br><br>
+					<div>
+						<input type="radio" name="recommend" id="recomend1" value="0">
+						<label class="radio-label" >Yes</label>
+						<input type="radio" name="recommend" id="recommend2" value="1">
+						<label class="radio-label" >No</label>
+						<input type="radio" name="recommend" id="recommend3" value="2">
+						<label class="radio-label">Not Sure</label>
+					</div><br><br>
+				</div>
+	
+				<!-- COMMENTS AREA -->
+				<div id="feedback3">	
+					<label ><strong>Additional Comments (optional) : </strong></label>
+					<textarea id="feedback4" name="feedback3"  rows="5" cols="60" placeholder="Enter something here..." >
+					</textarea><br><br>
+				</div>
+			
+				<!-- RATINGS -->
+				<div id="ratings">
+					<label ><strong>How Satisfied Were You With Our Website? Rate Us!</strong></label ><br><br>
+					<div>
+						<input type="radio" name="rate" id="rate-0" value="0">
+						<label class="radio-label" for="rate-0">0</label>
+						<input type="radio" name="rate" id="rate-1" value="1">
+						<label class="radio-label" for="rate-1">1</label>
+						<input type="radio" name="rate" id="rate-2" value="2">
+						<label class="radio-label" for="rate-2">2</label>
+						<input type="radio" name="rate" id="rate-3" value="3">
+						<label class="radio-label" for="rate-3">3</label>
+						<input type="radio" name="rate" id="rate-4" value="4">
+						<label class="radio-label" for="rate-4">4</label>
+						<input type="radio" name="rate" id="rate-5" value="5">
+						<label class="radio-label" for="rate-5">5</label>
+						<input type="radio" name="rate" id="rate-6" value="6">
+						<label class="radio-label" for="rate-6">6</label>
+						<input type="radio" name="rate" id="rate-7" value="7">
+						<label class="radio-label" for="rate-7">7</label>
+						<input type="radio" name="rate" id="rate-8" value="8">
+						<label class="radio-label" for="rate-8">8</label>
+						<input type="radio" name="rate" id="rate-9" value="9">
+						<label class="radio-label" for="rate-9">9</label>
+						<input type="radio" name="rate" id="rate-10" value="10" checked>
+						<label class="radio-label" for="rate-10">10</label>
+					</div><br><br>
+				</div>
+
+				<div id="buttons">
+					<!-- RESET BUTTON -->
+					<input type="reset" id="reset" value="Reset"><br><br>
+					<!-- SUBMIT BUTTON -->
+					<input type="submit" id="submit" value="Submit Your Feedback"><br><br>	
+				</div>
+			</form>
+		</div>
+	</fieldset><br><br>
+	
+
+
+	<!-- FOOTER -->
+	<footer>
+		<div id="leftside">
+			<h3>QUICK LINKS</h3>
+			<ul>
+				<li><a href="..\HomePage\HomePage.html">Home</a></li>
+				<li><a href="..\StorePage\Shop.html">Store</a></li>
+				<li><a href="..\Quiz\Quiz1.html">Quiz</a></li>
+				<li><a href="../gallery/Gallery.html">Gallery</a></li>
+				<li><a href="../sitemap/Sitemap.html">Site Map</a></li>
+				<li><a href="..\FeedbackPage\feedbackForm.html">Feedback</a></li>
+				<li><a href="../StudentDetails/StudentDetails.html">About Us</a></li>
+			</ul><br>
+		</div>
+<hr>
+		<div id="center">
+			<h3>SOCIALS</h3>
+			<ul class="social">
+				<li><a href="https://www.facebook.com/iitsl/">
+					<img src="..\images\fb.webp" alt="facebook">
+				</a></li>
+
+				<li><a href="https://www.youtube.com/channel/UC02DMFclK9vaEdOIKSiaNkA">
+					<img src="..\images\yout.webp" alt="youtube">
+				</a></li>
+				
+				<li><a href="https://twitter.com/iitsrilanka?lang=en">
+					<img src="..\images\twitter.webp" alt="twitter">
+				</a></li>
+
+				<li><a href="https://twitter.com/iitsrilanka?lang=en">
+					<img src="..\images\inster.webp" alt="instergram">
+				</a></li>
+			</ul>			
+		</div>
+		<div id="rightside">
+			<h3>CONTACT US</h3>
+			<ul>
+				<li>Contact: 098-7654321</li>
+				<li>E-mail: <a href="mailto:thrillofceylon@gmail.com">thrillofceylon@gmail.com</a></li>
+				<li>Address: Galle Road, Colombo, Sri Lanka.</li>
+			</ul>
+		</div>
+		<!-- Page Editor link -->
+		<div class="pageeditor">	
+			<a href="..\PageEditor-2\pageEditor.html"><b>View Page Editor</b></a>
+			<p>©Copyright THRILLOFCEYLON 2023 All Rights Reserved.</p>	
+		</div>
+		
+		<!-- Back to Top link -->
+		<div id="backtotop">
+			<a href="#"><b>Back to Top</b></a>
+		</div>
+	</footer>
+
+ 
+</body>
+</html>

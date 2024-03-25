@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="Quiz1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> 
+    <link rel="stylesheet" href="../NavBar/navbarandfooter1.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+	<header class="mainheader">
+		<!-- WEBSITE LOGO -->
+		<img id="logo" src="../Images/logo.png" alt="Web Logo">
+		<nav id="navigation">
+			<ul>
+				<li><a href="..\HomePage\HomePage.html"> Home</a></li>
+				<li><a href="..\StorePage\Shop.html"> Store</a></li>
+				<li><a class="active" href="../Quiz/Quiz1.html"> Quiz</a></li>
+				<li><a href="../gallery/Gallery.html">Gallery</a></li>
+				<li><a href="..\Sitemap\Sitemap.html">Site Map</a></li>
+				<li><a href="..\FeedbackPage\feedbackForm.html">Feedback</a></li>
+				<li><a href="../StudentDetails/StudentDetails.html">About Us</a></li>
+			</ul>
+		</nav>
+    </header><br>
+
+    <!-- Start Quiz button -->
+    <div class="start_btn"><button>Start Quiz</button></div>
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Some Rules of this Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. You will only have<span>15 seconds</span> per each question.</div>
+            <div class="info">2. Once you select your answer, it <span>can't be undone</span>.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You will get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header class="heading">
+            <div class="title">Quiz Application</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- questions from javascript -->
+            </div>
+            <div class="option_list">
+                <!-- options from java script -->
+            </div>
+        </section>
+        <!-- footer of the Quiz Box -->
+        <footer class="queue">
+            <div class="total_que">
+                <!-- question count number from javascript -->
+            </div>
+            <div>
+                <button class="next_btn">Next Quest</button>
+            </div>
+            
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <!-- score results from java script -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+	<footer class="mainfooter">
+		<div id="leftside">
+			<h3>QUICK LINKS</h3>
+			<ul>
+				<li><a href="..\HomePage\HomePage.html">Home</a></li>
+				<li><a href="..\StorePage\Shop.html">Store</a></li>
+				<li><a href="..\Quiz\Quiz1.html">Quiz</a></li>
+				<li><a href="../gallery/Gallery.html">Gallery</a></li>
+				<li><a href="../sitemap/Sitemap.html">Site Map</a></li>
+				<li><a href="..\FeedbackPage\feedbackForm.html">Feedback</a></li>
+				<li><a href="../StudentDetails/StudentDetails.html">About Us</a></li>
+			</ul>
+		</div>
+
+<hr>
+
+		<div id="center">
+			<h3>SOCIALS</h3>
+			<ul class="social">
+				<li><a href="https://www.facebook.com/iitsl/">
+					<img src="../Images/fb.webp" alt="facebook">
+				</a></li>
+
+				<li><a href="https://www.youtube.com/channel/UC02DMFclK9vaEdOIKSiaNkA">
+					<img src="../Images/yout.webp" alt="youtube">
+				</a></li>
+				
+				<li><a href="https://twitter.com/iitsrilanka?lang=en">
+					<img src="../Images/twitter.webp" alt="twitter">
+				</a></li>
+
+				<li><a href="https://twitter.com/iitsrilanka?lang=en">
+					<img src="../Images/inster.webp" alt="instergram">
+				</a></li>
+			</ul>			
+		</div>
+		
+		<div id="rightside">
+			<h3>CONTACT US</h3>
+			<ul>
+				<li>Contact: 098-7654321</li>
+				<li>E-mail: <a href="mailto:thrillofceylon@gmail.com">thrillofceylon@gmail.com</a></li>
+				<li>Address: Galle Road, Colombo, Sri Lanka.</li>
+			</ul>
+		</div>
+
+		<!-- Page Editor link -->
+		<div class="pageeditor">	
+			<a href="../PageEditor-3/Page_editor.css"><b>View Page Editor</b></a>
+			<p>©Copyright THRILLOFCEYLON 2023 All Rights Reserved.</p>	
+		</div>
+		
+		<!-- Back to Top link -->
+		<div id="backtotop">
+			<a href="#"><b>Back to Top</b></a>
+		</div>
+	</footer>
+
+    <script src="Quiz1.js"></script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+.mainBody {
+  max-width: 60%;
+  margin: auto;
+}
+
+.heading {
+  font-size: 400%;
+  padding-left: 0px;
+  color: purple;
+  margin-top: 10vh;
+} 
+
+button {
+  cursor: pointer;
+}
+
+
+.inputs {
+  margin-bottom: 3vh;
+}
+
+.input1{
+  margin-bottom: 2vh;
+  background-color: rgba(0, 0, 0, 0.144);
+  border: none;
+  border-radius: 2vw;
+  padding: 1.2vh;
+  width: 20vw;
+  padding-left: 1.5vw;
+  font-size:1vw;
+  
+}
+
+.input1:focus{
+  outline: solid 1px;
+}
+
+.productRow {
+  justify-content: space-between;
+  padding-left: 0px;
+  display: flex;
+  padding: 40px 10px;
+  padding-top: 20px;
+  background-color: rgba(128, 0, 128, 0.247);
+  border-radius: 40px;
+}
+
+.products img {
+  width: 90%;
+  max-width: 250px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.products {
+  text-align: center;
+}
+
+.productName {
+  font-size: 140%;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+.price {
+  font-size: 120%;
+  margin-top: 5px;
+}
+
+.products button {
+  padding: 5% 10%;
+  border-style: none ;
+  border-radius: 60%;
+  color: purple;
+  transition: background-color 0.25s;
+}
+
+.products button:hover {
+  background-color: purple;
+  color: white;
+}
+
+.products button:active {
+  opacity: 0.5;
+}
+
+.cartField {
+  margin-top: 80px;
+  min-height: 350px;
+  border-radius: 40px;
+  margin: 8vh;
+}
+
+.cartField h1 {
+  color: purple;
+  font-size: 300%;
+  font-weight: bold;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+
+.cartEmpty {
+  padding-top: 0.8vh;
+  text-align: center;
+  font-size: 3.5vh;
+}
+
+.cartEmpty p {
+  opacity: 0.3;
+}
+
+
+.btn {
+  padding: 2% 6%;
+  border-radius: 3vh;
+  font-size: 2vh;
+  color: purple;
+  transition: background-color 0.25s;
+  text-decoration: none;
+  color: black;
+  background-color: rgb(226, 226, 226);
+}
+
+.btn:hover{
+  background-color: purple;
+  color: white;
+}
+
+
+
+.cartEmpty button {
+  padding: 2% 6%;
+  border-style: none ;
+  border-radius: 3vh;
+  color: purple;
+  transition: background-color 0.25s;
+}
+
+.cartEmpty button a {
+  text-decoration: none;
+  color: black;
+}
+
+.cartEmpty button:hover {
+  background-color: purple;
+  color: white;
+}
+
+.cartProduct {
+  background-color: rgb(255, 203, 255);
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  justify-content: space-between;
+  padding: 1vh 3vh;
+  border-radius: 2vh;
+  margin-bottom: 2vh;
+}
+
+.cartProduct img {
+  height: 8vh;
+  border-radius: 5vh ;
+}
+
+.cartProduct p {
+  font-size: 3vh;
+  font-weight: bold;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  font-size: 2.5vh;
+}
+
+.quantityValue {
+  padding: 0.5vh 0.6vw;
+  margin: 0.2vw;
+  border-radius: 2vh;
+  background-color: purple;
+  color: white;
+}
+
+.quantity button{
+  border-style: none;
+  width: 2vw;
+  height: 4vh;
+  border-radius: 2vh;
+  font-size: 2.5vh;
+}
+
+.deleteButton {
+  background-color: transparent;
+  border-style: none;
+}
+
+.deleteButton img {
+  height:1.8vw ;
+}
+
+.totalDiv {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(255, 203, 255);
+  height: 6vh;
+  padding: 1vh 3vh;
+  border-radius: 2vh;
+  margin-bottom: 2vh;
+  align-items: center;
+  visibility: hidden;
+}
+
+.totalDiv div {
+  font-size: 3vh;
+  font-weight: bold;
+}
+
+.addedProductName {
+  min-width: 15vw;
+}
+
+.addingProductPrice {
+  min-width: 15vw;
+}
+
+#checkoutButton {
+  float: right;
+  padding: 2% 6%;
+  border-style: none ;
+  border-radius: 3vh;
+  color: purple;
+  transition: background-color 0.25s;
+  visibility: hidden;
+}
+
+#checkoutButton:hover {
+  background-color: purple;
+  color: white;
+}
+
+#invoiceDiv {
+  width: 59.4vw;
+  min-height: 70vh;
+  border-radius: 6vh;
+  background-color: bisque;
+  position: fixed;
+  box-shadow: 0px 0px 0px 1000px rgba(0, 0, 0, 0.555);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  visibility: hidden;
+}
+
+
+
+#doneButton {
+  margin-top: 5vh;
+  padding: 2% 6%;
+  border-style: none ;
+  border-radius: 3vh;
+  color: rgb(0, 0, 0);
+  transition: background-color 0.25s;
+}
+
+#doneButton:hover {
+  background-color: purple;
+  color: white;
+}
+
+
+
+
+
+
